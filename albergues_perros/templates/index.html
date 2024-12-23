@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Patitas Perú</title>
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            background-color: #f0f2f5; /* Fondo gris claro */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .hero {
+            background-color: #FFC107; /* Fondo amarillo */
+            color: black; /* Texto negro */
+            padding: 2rem 20rem;
+            text-align: center;
+        }
+
+        .service-box {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .button.is-info {
+            background-color: #3b5998; /* Azul botón */
+            color: white;
+        }
+
+        .button.is-info:hover {
+            background-color: #2a487b; /* Azul oscuro al hover */
+        }
+
+        .columns {
+            margin-top: 2rem;
+        }
+
+        footer {
+            background-color: #1abc9c; /* Fondo verde */
+            color: white; /* Texto blanco */
+            padding: 1rem;
+            text-align: center;
+            margin-top: auto;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">Bienvenido a Patitas Perú</h1>
+                <p class="subtitle">Buscamos hogares para nuestros amigos caninos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Options Section -->
+    <section class="section">
+        <div class="container">
+            <div class="columns is-centered">
+                <!-- Adopción -->
+                <div class="column is-one-third">
+                    <div class="service-box">
+                        <button class="button is-info is-fullwidth" onclick="location.href='/ver_perros';">ADOPTAR</button>
+                    </div>
+                </div>
+                <!-- Subir Perro -->
+                <div class="column is-one-third">
+                    <div class="service-box">
+                        <button class="button is-info is-fullwidth" onclick="location.href='/subir_perro';">SUBIR PERRO</button>
+                    </div>
+                </div>
+                <!-- Reportar -->
+                <div class="column is-one-third">
+                    <div class="service-box">
+                        <button class="button is-info is-fullwidth" onclick="location.href='/reportar';">REPORTAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Fundación Patitas. Todos los derechos reservados.</p>
+        <p>Dirección: Jr Babilonia, Juliaca, Perú | Teléfono: +51 923269455 | Correo: patitasp_peru_@gmail.com</p>
+    </footer>
+</body>
+</html>

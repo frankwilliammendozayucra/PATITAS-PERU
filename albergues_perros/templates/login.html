@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #3b5998; /* Fondo azul */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Altura completa de la ventana */
+            margin: 0;
+        }
+        .login-box {
+            background: white; /* Fondo blanco para el formulario */
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            text-align: center;
+        }
+        .button.is-primary {
+            background-color: #3b5998; /* Color azul del botón */
+            color: white;
+        }
+        .button.is-primary:hover {
+            background-color: #2a487b; /* Color más oscuro al pasar el mouse */
+        }
+        .has-text-centered a {
+            color: #ffffff; /* Color blanco para los enlaces */
+        }
+        .has-text-centered a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <h1 class="title is-4">Iniciar Sesión</h1>
+        <form action="/login" method="POST">
+            <div class="field">
+                <label class="label">Usuario</label>
+                <div class="control">
+                    <input class="input" type="email" name="email" placeholder="Ingrese su usuario" required>
+                </div>
+            </div>
+            <div class="field">
+                <label class="label">Contraseña</label>
+                <div class="control">
+                    <input class="input" type="password" name="contrasena" placeholder="Ingrese su contraseña" required>
+                </div>
+            </div>
+            <div class="field">
+                <button class="button is-primary is-fullwidth">Iniciar Sesión</button>
+            </div>
+        </form>
+        <div class="has-text-centered">
+            <a href="#">¿Olvidaste tu contraseña?</a>
+        </div>
+        <hr>
+        <div class="has-text-centered">
+            <p>¿No tienes una cuenta? <a href="/register">Regístrate</a></p>
+        </div>
+    </div>
+</body>
+</html>
